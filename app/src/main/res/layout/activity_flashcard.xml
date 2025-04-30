@@ -4,23 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5>">
+    android:background="#F5F5F5">
 
     <TextView
-        android:background="@color/white"
+        android:layout_marginTop="100sp"
+        android:layout_marginBottom="50sp"
+        android:layout_marginStart="50sp"
+        android:layout_marginEnd="50sp"
         android:id="@+id/textView"
-        android:layout_width="305dp"
-        android:layout_height="569dp"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="356dp"
-        android:layout_marginEnd="177dp"
-        android:layout_marginBottom="356dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:text="Click to flip"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:background="@color/white"
         android:clickable="true"
         android:focusable="true"
-        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

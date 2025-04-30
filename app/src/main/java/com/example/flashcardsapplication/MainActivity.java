@@ -1,5 +1,6 @@
 package com.example.flashcardsapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -21,36 +22,45 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
-        // Init elements for the list view
-        listView = findViewById(R.id.listView);
+        try {
+            EdgeToEdge.enable(this);
+            setContentView(R.layout.activity_main);
 
-        // Create a list of items
-        items = new ArrayList<>();
-        items.add("Item 1");
-        items.add("Item 2");
+            ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+                Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+                return insets;
+            });
 
-        // Create an adapter to display the list
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
+            // Init elements for the list view
+            listView = findViewById(R.id.listView);
 
-        // Set the adapter to the ListView
-        listView.setAdapter(adapter);
+            // Create a list of items
+            items = new ArrayList<>();
+            items.add("Item 1");
+            items.add("Item 2");
 
-        // To add a new item later:
-        items.add("New Item");
-        adapter.notifyDataSetChanged(); // Refresh the ListView
+            // Create an adapter to display the list
+            adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
 
-        listView.setOnItemClickListener((parent, view, position, id) -> {
-            String clickedItem = items.get(position);
-            Toast.makeText(MainActivity.this, "Clicked: " + clickedItem, Toast.LENGTH_SHORT).show();
-        });
+            // Set the adapter to the ListView
+            listView.setAdapter(adapter);
 
+            // To add a new item later:
+            items.add("New Item");
+            adapter.notifyDataSetChanged(); // Refresh the ListView
+
+            // Handle item clicks
+            listView.setOnItemClickListener((parent, view, position, id) -> {
+                String clickedItem = items.get(position);
+                Intent intent = new Intent(MainActivity.this, FlashcardActivity.class);
+                startActivity(intent);
+            });
+
+        } catch (Exception e) {
+            Toast.makeText(this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+        }
     }
+
 }
