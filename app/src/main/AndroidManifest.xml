@@ -21,7 +21,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FlashcardActivity" />
+
+        <activity
+            android:name=".FlashcardActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".ContinueFlashcardActivity" />
     </application>
 
 </manifest>

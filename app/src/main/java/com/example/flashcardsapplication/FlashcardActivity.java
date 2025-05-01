@@ -1,5 +1,6 @@
 package com.example.flashcardsapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -100,7 +101,10 @@ public class FlashcardActivity extends AppCompatActivity {
                     currentIndex++;
                     if (currentIndex >= flashcards.size()) {
                         Toast.makeText(this, "All flashcards reviewed!", Toast.LENGTH_SHORT).show();
-                        currentIndex = 0; // Optionally loop back
+                        if (unknownSum != 0) {
+                            Intent i = new Intent(FlashcardActivity.this, ContinueFlashcardActivity.class);
+                            startActivity(i);
+                        }
                     }
 
                     updateCard(); // <-- Update card and progress
