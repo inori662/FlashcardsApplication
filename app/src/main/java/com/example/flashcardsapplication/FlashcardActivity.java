@@ -6,7 +6,6 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,7 +22,6 @@ public class FlashcardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_flashcard);
 
         // Initialize views
@@ -33,23 +31,25 @@ public class FlashcardActivity extends AppCompatActivity {
         progressTextView = findViewById(R.id.progress);
         progressBar = findViewById(R.id.progressBar);
 
-        // Initialize flashcards (this can be modified if coming from an external source)
-        flashcards.add(new Flashcard("What is the capital of France?", "Paris", false));
-        flashcards.add(new Flashcard("What is 2 + 2?", "4", false));
-        flashcards.add(new Flashcard("What is the largest ocean?", "Pacific Ocean", false));
-        flashcards.add(new Flashcard("Who wrote 'Romeo and Juliet'?", "William Shakespeare", false));
-        flashcards.add(new Flashcard("What planet is known as the Red Planet?", "Mars", false));
-
-        // Check if there are any unknown flashcards passed from ContinueFlashcardActivity
+        // Retrieve flashcards passed from MainActivity
         Intent intent = getIntent();
-        if (intent.hasExtra("UNKNOWN_FLASHCARDS")) {
-            unknownFlashcards = (ArrayList<Flashcard>) intent.getSerializableExtra("UNKNOWN_FLASHCARDS");
-            flashcards = new ArrayList<>(unknownFlashcards); // Replace with only unknown flashcards
+        if (intent.hasExtra("FLASHCARDS")) {
+            flashcards = (ArrayList<Flashcard>) intent.getSerializableExtra("FLASHCARDS");
+        } else {
+            // If no flashcards were passed, fallback to an empty list or display an error
+            flashcards = new ArrayList<>();
         }
 
-        updateCard(); // Set initial card and progress
+        // Check if there are any unknown flashcards passed from ContinueFlashcardActivity
+        intent = getIntent();
+        if (intent.hasExtra("UNKNOWN_FLASHCARDS")) {
+            unknownFlashcards = (ArrayList<Flashcard>) intent.getSerializableExtra("UNKNOWN_FLASHCARDS");
+            flashcards = new ArrayList<>(unknownFlashcards);
+        }
 
-        // Gesture and click listeners for card flip
+        updateCard();
+
+        // Gesture detection
         GestureDetector gestureDetector = new GestureDetector(this, new GestureDetector.SimpleOnGestureListener() {
             private static final int SWIPE_THRESHOLD = 100;
             private static final int SWIPE_VELOCITY_THRESHOLD = 100;
@@ -71,6 +71,7 @@ public class FlashcardActivity extends AppCompatActivity {
             }
         });
 
+        // Card flip
         textView.setOnClickListener(v -> {
             isFlipped = !isFlipped;
             textView.setText(isFlipped ? flashcards.get(currentIndex).getAnswer() : flashcards.get(currentIndex).getQuestion());
@@ -82,15 +83,16 @@ public class FlashcardActivity extends AppCompatActivity {
     private void onSwipeLeft() {
         unknownSum += 1;
         flashcards.get(currentIndex).setKnown(false);
-        animateSwipe(-textView.getWidth()); // swipe left
+        unknownFlashcards.add(flashcards.get(currentIndex));
         unknownTextView.setText(String.valueOf(unknownSum));
+        animateSwipe(-textView.getWidth());
     }
 
     private void onSwipeRight() {
         knownSum += 1;
         flashcards.get(currentIndex).setKnown(true);
-        animateSwipe(textView.getWidth()); // swipe right
         knownTextView.setText(String.valueOf(knownSum));
+        animateSwipe(textView.getWidth());
     }
 
     private void animateSwipe(float toX) {
@@ -100,16 +102,25 @@ public class FlashcardActivity extends AppCompatActivity {
                 .setDuration(300)
                 .withEndAction(() -> {
                     currentIndex++;
+
                     if (currentIndex >= flashcards.size()) {
-                        Toast.makeText(this, "All flashcards reviewed!", Toast.LENGTH_SHORT).show();
-                        if (unknownSum != 0) {
-                            Intent i = new Intent(FlashcardActivity.this, ContinueFlashcardActivity.class);
-                            i.putExtra("UNKNOWN_FLASHCARDS", unknownFlashcards);
-                            startActivity(i);
+                        // Finished reviewing
+                        ArrayList<Flashcard> remainingUnknowns = new ArrayList<>();
+                        for (Flashcard card : flashcards) {
+                            if (!card.isKnown()) {
+                                remainingUnknowns.add(card);
+                            }
                         }
+
+                        Intent i = new Intent(FlashcardActivity.this, ContinueFlashcardActivity.class);
+                        i.putExtra("UNKNOWN_FLASHCARDS", remainingUnknowns);
+                        i.putExtra("TOTAL_FLASHCARDS", flashcards.size());
+                        startActivity(i);
+                        finish();
+                        return; // Stop here to prevent updateCard() crash
                     }
 
-                    updateCard(); // Update the flashcard and progress
+                    updateCard();
                     textView.setTranslationX(-toX);
                     textView.animate()
                             .translationX(0)
@@ -124,11 +135,9 @@ public class FlashcardActivity extends AppCompatActivity {
         isFlipped = false;
         textView.setText(flashcards.get(currentIndex).getQuestion());
 
-        // Set progress
         String progressText = (currentIndex + 1) + "/" + flashcards.size();
         progressTextView.setText(progressText);
 
-        // Update progress bar
         int progress = (int) ((float) (currentIndex + 1) / flashcards.size() * 100);
         progressBar.setProgress(progress);
     }
