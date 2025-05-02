@@ -13,47 +13,49 @@ import java.util.ArrayList;
 public class ContinueFlashcardActivity extends AppCompatActivity {
     Button continueBtn, resetBtn;
     TextView textView;
-    private ArrayList<Flashcard> unknownFlashcards;  // Store the flashcards that are unknown
-    private int totalFlashcards;
+    private ArrayList<Flashcard> flashcards;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_continueflashcard);
 
-        // Initialize buttons
         continueBtn = findViewById(R.id.ContinueBtn);
         resetBtn = findViewById(R.id.resetBtn);
         textView = findViewById(R.id.textViewContent);
 
-        // Get the flashcards marked as unknown from the Intent
-        unknownFlashcards = (ArrayList<Flashcard>) getIntent().getSerializableExtra("UNKNOWN_FLASHCARDS");
-        totalFlashcards = getIntent().getIntExtra("TOTAL_FLASHCARDS", 0);
+        flashcards = (ArrayList<Flashcard>) getIntent().getSerializableExtra("FLASHCARDS");
 
-        if (unknownFlashcards == null || unknownFlashcards.isEmpty()) {
+        int known = 0;
+        int unknown = 0;
+        for (Flashcard card : flashcards) {
+            if (card.isKnown()) known++;
+            else unknown++;
+        }
+
+        // Show a success message if all flashcards are marked as known,
+        // otherwise display progress to motivate continued learning
+        if (unknown == 0) {
             continueBtn.setVisibility(View.INVISIBLE);
-            textView.setText("Congratulations!");
-        }
-        else {
-            String message = String.valueOf(textView.getText())
-                    .replace("{x}", String.valueOf(totalFlashcards - unknownFlashcards.size()))
-                    .replace("{y}", String.valueOf(unknownFlashcards.size()));
-            textView.setText(message);
+            textView.setText("Congratulations! You've mastered all the flashcards.");
+        } else {
+            textView.setText("Great job! You've learned " + known + " cards. Let's review the remaining " + unknown + ".");
         }
 
 
-
-        // Continue button logic: Return to FlashcardActivity and continue from the unknown flashcards
         continueBtn.setOnClickListener(v -> {
             Intent intent = new Intent(ContinueFlashcardActivity.this, FlashcardActivity.class);
-            intent.putExtra("UNKNOWN_FLASHCARDS", unknownFlashcards);  // Pass back the unknown flashcards
+            intent.putExtra("FLASHCARDS", flashcards);
             startActivity(intent);
             finish();
         });
 
-        // Reset button logic: Restart FlashcardActivity with all flashcards and reset progress
         resetBtn.setOnClickListener(v -> {
+            for (Flashcard card : flashcards) {
+                card.setKnown(false);
+            }
             Intent intent = new Intent(ContinueFlashcardActivity.this, FlashcardActivity.class);
+            intent.putExtra("FLASHCARDS", flashcards);
             startActivity(intent);
             finish();
         });

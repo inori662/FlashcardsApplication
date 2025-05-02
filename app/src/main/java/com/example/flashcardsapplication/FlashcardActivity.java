@@ -13,11 +13,10 @@ import java.util.ArrayList;
 
 public class FlashcardActivity extends AppCompatActivity {
     private ArrayList<Flashcard> flashcards = new ArrayList<>();
-    private ArrayList<Flashcard> unknownFlashcards = new ArrayList<>();
     private TextView textView, knownTextView, unknownTextView, progressTextView;
     private ProgressBar progressBar;
     private boolean isFlipped = false;
-    private int currentIndex = 0, knownSum = 0, unknownSum = 0;
+    private int currentIndex = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,20 +30,10 @@ public class FlashcardActivity extends AppCompatActivity {
         progressTextView = findViewById(R.id.progress);
         progressBar = findViewById(R.id.progressBar);
 
-        // Retrieve flashcards passed from MainActivity
+        // Retrieve flashcards passed from MainActivity or ContinueFlashcardActivity
         Intent intent = getIntent();
         if (intent.hasExtra("FLASHCARDS")) {
             flashcards = (ArrayList<Flashcard>) intent.getSerializableExtra("FLASHCARDS");
-        } else {
-            // If no flashcards were passed, fallback to an empty list or display an error
-            flashcards = new ArrayList<>();
-        }
-
-        // Check if there are any unknown flashcards passed from ContinueFlashcardActivity
-        intent = getIntent();
-        if (intent.hasExtra("UNKNOWN_FLASHCARDS")) {
-            unknownFlashcards = (ArrayList<Flashcard>) intent.getSerializableExtra("UNKNOWN_FLASHCARDS");
-            flashcards = new ArrayList<>(unknownFlashcards);
         }
 
         updateCard();
@@ -71,7 +60,6 @@ public class FlashcardActivity extends AppCompatActivity {
             }
         });
 
-        // Card flip
         textView.setOnClickListener(v -> {
             isFlipped = !isFlipped;
             textView.setText(isFlipped ? flashcards.get(currentIndex).getAnswer() : flashcards.get(currentIndex).getQuestion());
@@ -80,19 +68,35 @@ public class FlashcardActivity extends AppCompatActivity {
         textView.setOnTouchListener((v, event) -> gestureDetector.onTouchEvent(event));
     }
 
+    private int shownIndex = 0;
     private void onSwipeLeft() {
-        unknownSum += 1;
+        shownIndex += 1;
         flashcards.get(currentIndex).setKnown(false);
-        unknownFlashcards.add(flashcards.get(currentIndex));
-        unknownTextView.setText(String.valueOf(unknownSum));
+        unknownTextView.setText(String.valueOf(countUnknown()));
         animateSwipe(-textView.getWidth());
     }
 
     private void onSwipeRight() {
-        knownSum += 1;
+        shownIndex += 1;
         flashcards.get(currentIndex).setKnown(true);
-        knownTextView.setText(String.valueOf(knownSum));
+        knownTextView.setText(String.valueOf(countKnown()));
         animateSwipe(textView.getWidth());
+    }
+
+    private int countKnown() {
+        int count = 0;
+        for (Flashcard card : flashcards) {
+            if (card.isKnown()) count++;
+        }
+        return count;
+    }
+
+    private int countUnknown() {
+        int count = 0;
+        for (Flashcard card : flashcards) {
+            if (!card.isKnown()) count++;
+        }
+        return count;
     }
 
     private void animateSwipe(float toX) {
@@ -104,20 +108,11 @@ public class FlashcardActivity extends AppCompatActivity {
                     currentIndex++;
 
                     if (currentIndex >= flashcards.size()) {
-                        // Finished reviewing
-                        ArrayList<Flashcard> remainingUnknowns = new ArrayList<>();
-                        for (Flashcard card : flashcards) {
-                            if (!card.isKnown()) {
-                                remainingUnknowns.add(card);
-                            }
-                        }
-
                         Intent i = new Intent(FlashcardActivity.this, ContinueFlashcardActivity.class);
-                        i.putExtra("UNKNOWN_FLASHCARDS", remainingUnknowns);
-                        i.putExtra("TOTAL_FLASHCARDS", flashcards.size());
+                        i.putExtra("FLASHCARDS", flashcards);
                         startActivity(i);
                         finish();
-                        return; // Stop here to prevent updateCard() crash
+                        return;
                     }
 
                     updateCard();
@@ -131,14 +126,51 @@ public class FlashcardActivity extends AppCompatActivity {
                 .start();
     }
 
+    private int initialTotalUnknown = -1;
     private void updateCard() {
         isFlipped = false;
+
+        // Skip known cards
+        while (currentIndex < flashcards.size() && flashcards.get(currentIndex).isKnown()) {
+            currentIndex++;
+        }
+
+        // If there are no more unknown cards left
+        if (currentIndex >= flashcards.size()) {
+            Intent intent = new Intent(FlashcardActivity.this, ContinueFlashcardActivity.class);
+            intent.putExtra("FLASHCARDS", flashcards); // pass the full list
+            startActivity(intent);
+            finish();
+            return;
+        }
+
+        // Show question of the current (unknown) card
         textView.setText(flashcards.get(currentIndex).getQuestion());
 
-        String progressText = (currentIndex + 1) + "/" + flashcards.size();
-        progressTextView.setText(progressText);
+        // Progress display based on total unknown cards
+        int totalUnknown = countUnknown();
+        int shownUnknown = getShownUnknownCount();
+        if (initialTotalUnknown == -1) {
+            initialTotalUnknown = totalUnknown;
+        }
+        progressTextView.setText((shownIndex+1) + "/" + initialTotalUnknown);
 
-        int progress = (int) ((float) (currentIndex + 1) / flashcards.size() * 100);
+        int progress = (int) ((float) shownUnknown / totalUnknown * 100);
         progressBar.setProgress(progress);
+
+        knownTextView.setText(String.valueOf(countKnown()));
+        unknownTextView.setText(String.valueOf(countUnknown()));
     }
+
+    private int getShownUnknownCount() {
+        int count = 0;
+        for (int i = 0; i <= currentIndex && i < flashcards.size(); i++) {
+            if (!flashcards.get(i).isKnown()) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+
 }
