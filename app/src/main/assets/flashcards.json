@@ -53,5 +53,56 @@
       { "question": "What instrument has 88 keys?", "answer": "Piano", "isKnown": false },
       { "question": "Who wrote 'The Four Seasons'?", "answer": "Vivaldi", "isKnown": false }
     ]
+  },
+  {
+    "name": "Japanese Vocabulary",
+    "cards": [
+      { "question": "What is the Japanese word for 'hello'?", "answer": "こんにちは (Konnichiwa)", "isKnown": false },
+      { "question": "What is the Japanese word for 'goodbye'?", "answer": "さようなら (Sayōnara)", "isKnown": false },
+      { "question": "What is the Japanese word for 'thank you'?", "answer": "ありがとう (Arigatou)", "isKnown": false },
+      { "question": "What is the Japanese word for 'yes'?", "answer": "はい (Hai)", "isKnown": false },
+      { "question": "What is the Japanese word for 'no'?", "answer": "いいえ (Iie)", "isKnown": false },
+      { "question": "What is the Japanese word for 'please'?", "answer": "お願いします (Onegaishimasu)", "isKnown": false },
+      { "question": "What is the Japanese word for 'water'?", "answer": "水 (Mizu)", "isKnown": false },
+      { "question": "What is the Japanese word for 'food'?", "answer": "食べ物 (Tabemono)", "isKnown": false },
+      { "question": "What is the Japanese word for 'love'?", "answer": "愛 (Ai)", "isKnown": false },
+      { "question": "What is the Japanese word for 'friend'?", "answer": "友達 (Tomodachi)", "isKnown": false },
+      { "question": "What is the Japanese word for 'family'?", "answer": "家族 (Kazoku)", "isKnown": false },
+      { "question": "What is the Japanese word for 'school'?", "answer": "学校 (Gakkou)", "isKnown": false },
+      { "question": "What is the Japanese word for 'teacher'?", "answer": "先生 (Sensei)", "isKnown": false },
+      { "question": "What is the Japanese word for 'student'?", "answer": "学生 (Gakusei)", "isKnown": false },
+      { "question": "What is the Japanese word for 'bath'?", "answer": "お風呂 (Ofuro)", "isKnown": false },
+      { "question": "What is the Japanese word for 'book'?", "answer": "本 (Hon)", "isKnown": false },
+      { "question": "What is the Japanese word for 'car'?", "answer": "車 (Kuruma)", "isKnown": false },
+      { "question": "What is the Japanese word for 'train'?", "answer": "電車 (Densha)", "isKnown": false },
+      { "question": "What is the Japanese word for 'city'?", "answer": "都市 (Toshi)", "isKnown": false },
+      { "question": "What is the Japanese word for 'mountain'?", "answer": "山 (Yama)", "isKnown": false }
+    ]
+  },
+  {
+    "name": "Japanese Grammar",
+    "cards": [
+      { "question": "What does the particle は (wa) indicate?", "answer": "It indicates the topic of the sentence.", "isKnown": false },
+      { "question": "What does the particle が (ga) indicate?", "answer": "It marks the subject of the sentence, often indicating emphasis or new information.", "isKnown": false },
+      { "question": "What is the function of the particle を (wo)?", "answer": "It marks the direct object of the verb.", "isKnown": false },
+      { "question": "What does the particle に (ni) indicate?", "answer": "It is used for indicating a destination, time, or indirect object.", "isKnown": false },
+      { "question": "What does the particle で (de) indicate?", "answer": "It marks the location where an action takes place.", "isKnown": false },
+      { "question": "What is the て-form used for?", "answer": "The て-form is used for connecting verbs, making requests, or forming progressive tenses.", "isKnown": false },
+      { "question": "What is the negative form of verbs in Japanese?", "answer": "The negative form is created by changing the verb ending to ない (nai) for most verbs.", "isKnown": false },
+      { "question": "How do you ask a yes/no question in Japanese?", "answer": "By adding the particle か (ka) at the end of a statement.", "isKnown": false },
+      { "question": "What is the difference between です (desu) and だ (da)?", "answer": "Both are copulas, but です (desu) is more formal, while だ (da) is informal.", "isKnown": false },
+      { "question": "What is the purpose of the particle と (to)?", "answer": "It is used to list items or quote someone, as well as to mean 'with' in some contexts.", "isKnown": false },
+      { "question": "What is the past tense of ます (masu)-form verbs?", "answer": "To make a verb past tense, change the ます (masu) ending to ました (mashita).", "isKnown": false },
+      { "question": "What is the function of the particle も (mo)?", "answer": "It means 'also' or 'too' and can replace は (wa) or が (ga) in some cases.", "isKnown": false },
+      { "question": "What does the particle よ (yo) express?", "answer": "It is used at the end of a sentence to give emphasis or indicate that the speaker is providing new information.", "isKnown": false },
+      { "question": "What is the function of the particle から (kara)?", "answer": "It is used to indicate 'because' or 'from' depending on the context.", "isKnown": false },
+      { "question": "What is the function of the particle まで (made)?", "answer": "It means 'until' or 'up to' and is used to indicate the limit or endpoint of an action or time.", "isKnown": false },
+      { "question": "What is the polite request form in Japanese?", "answer": "To make a polite request, use the て-form of a verb followed by ください (kudasai).", "isKnown": false },
+      { "question": "How do you express ability or possibility in Japanese?", "answer": "By using the ことができる (koto ga dekiru) construction or changing the verb into its potential form.", "isKnown": false },
+      { "question": "What is the usage of the particle の (no)?", "answer": "It indicates possession or is used to form noun-modifying clauses.", "isKnown": false },
+      { "question": "What is the function of the particle へ (e)?", "answer": "It indicates direction or movement towards a place, similar to 'to' in English.", "isKnown": false },
+      { "question": "What is the conditional form in Japanese?", "answer": "The conditional form is created by changing the verb into the たら (tara) or ば (ba) form, depending on the verb type.", "isKnown": false },
+      { "question": "How do you express 'want to' do something in Japanese?", "answer": "By using the verb stem followed by たい (tai), e.g., 食べたい (tabetai) means 'want to eat'.", "isKnown": false }
+    ]
   }
 ]
