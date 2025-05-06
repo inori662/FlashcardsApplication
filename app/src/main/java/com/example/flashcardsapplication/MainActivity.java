@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 items.add(set.getName());
             }
 
-            // Set adapter
             adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
             listView.setAdapter(adapter);
 
@@ -61,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 FlashcardSet selectedSet = flashcardSets.get(position);
                 Intent intent = new Intent(MainActivity.this, FlashcardActivity.class);
                 intent.putExtra("FLASHCARDS", selectedSet.getCards());
+                intent.putExtra("FLASHCARDS_NAME", selectedSet.getName());
                 startActivity(intent);
             });
 
@@ -84,12 +84,27 @@ public class MainActivity extends AppCompatActivity {
             Gson gson = new Gson();
             Type listType = new TypeToken<ArrayList<FlashcardSet>>(){}.getType();
 
-            // Return the list of FlashcardSets
-            return gson.fromJson(json, listType);
+            // Parse the JSON to FlashcardSets
+            ArrayList<FlashcardSet> flashcardSets = gson.fromJson(json, listType);
+
+            // For each FlashcardSet, we need to ensure the cards are properly initialized
+            for (FlashcardSet set : flashcardSets) {
+                ArrayList<Flashcard> updatedCards = new ArrayList<>();
+                for (Flashcard card : set.getCards()) {
+                    ArrayList<String> choices = new ArrayList<>(card.getChoices());  // Choices from JSON
+                    updatedCards.add(new Flashcard(card.getQuestion(), choices, card.getAnswer(), card.isKnown()));
+                }
+                set.setCards(updatedCards);
+            }
+
+            return flashcardSets;
 
         } catch (Exception e) {
+            e.printStackTrace();
             return new ArrayList<>();
         }
     }
+
+
 
 }

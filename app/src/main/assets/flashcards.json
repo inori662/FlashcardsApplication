@@ -1,108 +1,1727 @@
 [
   {
-    "name": "History",
+    "name": "N5 Vocabulary",
     "cards": [
-      { "question": "Who was the first President of the United States?", "answer": "George Washington", "isKnown": false },
-      { "question": "In what year did World War II end?", "answer": "1945", "isKnown": false },
-      { "question": "Who was known as the Iron Lady?", "answer": "Margaret Thatcher", "isKnown": false },
-      { "question": "What ancient civilization built the pyramids?", "answer": "The Egyptians", "isKnown": false },
-      { "question": "What wall fell in 1989?", "answer": "The Berlin Wall", "isKnown": false },
-      { "question": "Who was assassinated in Dallas in 1963?", "answer": "John F. Kennedy", "isKnown": false }
+      {
+        "question": "What is the Japanese word for 'hello'?",
+        "choices": [
+          "こんにちは",
+          "こんばんは",
+          "さようなら",
+          "おはよう"
+        ],
+        "answer": "こんにちは",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese word for 'goodbye'?",
+        "choices": [
+          "こんにちは",
+          "おやすみ",
+          "ありがとう",
+          "さようなら"
+        ],
+        "answer": "さようなら",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese word for 'thank you'?",
+        "choices": [
+          "お願いします",
+          "ありがとう",
+          "すみません",
+          "はい"
+        ],
+        "answer": "ありがとう",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese word for 'yes'?",
+        "choices": [
+          "いいえ",
+          "はい",
+          "そうです",
+          "たぶん"
+        ],
+        "answer": "はい",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese word for 'no'?",
+        "choices": [
+          "いいえ",
+          "はい",
+          "うん",
+          "そうですね"
+        ],
+        "answer": "いいえ",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese word for 'please'?",
+        "choices": [
+          "どうも",
+          "すみません",
+          "お願いします",
+          "ありがとう"
+        ],
+        "answer": "お願いします",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese word for 'water'?",
+        "choices": [
+          "火",
+          "水",
+          "氷",
+          "雨"
+        ],
+        "answer": "水",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese word for 'food'?",
+        "choices": [
+          "料理",
+          "食事",
+          "食べ物",
+          "飲み物"
+        ],
+        "answer": "食べ物",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese word for 'love'?",
+        "choices": [
+          "愛",
+          "好き",
+          "恋",
+          "愛情"
+        ],
+        "answer": "愛",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese word for 'friend'?",
+        "choices": [
+          "先生",
+          "家族",
+          "友達",
+          "仲間"
+        ],
+        "answer": "友達",
+        "isKnown": false
+      }
     ]
   },
   {
-    "name": "Geography",
+    "name": "N5 Verbs",
     "cards": [
-      { "question": "Which is the largest ocean on Earth?", "answer": "Pacific Ocean", "isKnown": false },
-      { "question": "What country has the most people?", "answer": "China", "isKnown": false },
-      { "question": "Which desert is the largest in the world?", "answer": "Sahara Desert", "isKnown": false },
-      { "question": "What river runs through Egypt?", "answer": "Nile", "isKnown": false },
-      { "question": "Which continent is Brazil in?", "answer": "South America", "isKnown": false },
-      { "question": "What mountain range is Mount Everest part of?", "answer": "The Himalayas", "isKnown": false }
+      {
+        "question": "What is the Japanese verbs for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
     ]
   },
   {
-    "name": "Programming",
+    "name": "N5 Adjectives",
     "cards": [
-      { "question": "What language is used for Android development?", "answer": "Java or Kotlin", "isKnown": false },
-      { "question": "What symbol is used for comments in Python?", "answer": "#", "isKnown": false },
-      { "question": "What does HTML stand for?", "answer": "HyperText Markup Language", "isKnown": false },
-      { "question": "What is the value of Boolean 'true' in binary?", "answer": "1", "isKnown": false },
-      { "question": "Which language runs in a web browser?", "answer": "JavaScript", "isKnown": false },
-      { "question": "What does 'OOP' stand for?", "answer": "Object-Oriented Programming", "isKnown": false }
+      {
+        "question": "What is the Japanese adjectives for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
     ]
   },
   {
-    "name": "Art & Culture",
+    "name": "N4 Verbs",
     "cards": [
-      { "question": "Who painted the Mona Lisa?", "answer": "Leonardo da Vinci", "isKnown": false },
-      { "question": "What is Picasso famous for?", "answer": "Cubism", "isKnown": false },
-      { "question": "What is the traditional Japanese theater called?", "answer": "Kabuki", "isKnown": false },
-      { "question": "Which museum houses the Mona Lisa?", "answer": "The Louvre", "isKnown": false },
-      { "question": "Which artist cut off his own ear?", "answer": "Vincent van Gogh", "isKnown": false },
-      { "question": "What is a haiku?", "answer": "A form of Japanese poetry", "isKnown": false }
+      {
+        "question": "What is the Japanese verbs for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
     ]
   },
   {
-    "name": "Music",
+    "name": "N4 Adjectives",
     "cards": [
-      { "question": "Who is known as the King of Pop?", "answer": "Michael Jackson", "isKnown": false },
-      { "question": "What musical symbol indicates silence?", "answer": "Rest", "isKnown": false },
-      { "question": "What is the highest female voice type?", "answer": "Soprano", "isKnown": false },
-      { "question": "Which composer became deaf?", "answer": "Ludwig van Beethoven", "isKnown": false },
-      { "question": "What instrument has 88 keys?", "answer": "Piano", "isKnown": false },
-      { "question": "Who wrote 'The Four Seasons'?", "answer": "Vivaldi", "isKnown": false }
+      {
+        "question": "What is the Japanese adjectives for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
     ]
   },
   {
-    "name": "Japanese Vocabulary",
+    "name": "N4 Nouns",
     "cards": [
-      { "question": "What is the Japanese word for 'hello'?", "answer": "こんにちは (Konnichiwa)", "isKnown": false },
-      { "question": "What is the Japanese word for 'goodbye'?", "answer": "さようなら (Sayōnara)", "isKnown": false },
-      { "question": "What is the Japanese word for 'thank you'?", "answer": "ありがとう (Arigatou)", "isKnown": false },
-      { "question": "What is the Japanese word for 'yes'?", "answer": "はい (Hai)", "isKnown": false },
-      { "question": "What is the Japanese word for 'no'?", "answer": "いいえ (Iie)", "isKnown": false },
-      { "question": "What is the Japanese word for 'please'?", "answer": "お願いします (Onegaishimasu)", "isKnown": false },
-      { "question": "What is the Japanese word for 'water'?", "answer": "水 (Mizu)", "isKnown": false },
-      { "question": "What is the Japanese word for 'food'?", "answer": "食べ物 (Tabemono)", "isKnown": false },
-      { "question": "What is the Japanese word for 'love'?", "answer": "愛 (Ai)", "isKnown": false },
-      { "question": "What is the Japanese word for 'friend'?", "answer": "友達 (Tomodachi)", "isKnown": false },
-      { "question": "What is the Japanese word for 'family'?", "answer": "家族 (Kazoku)", "isKnown": false },
-      { "question": "What is the Japanese word for 'school'?", "answer": "学校 (Gakkou)", "isKnown": false },
-      { "question": "What is the Japanese word for 'teacher'?", "answer": "先生 (Sensei)", "isKnown": false },
-      { "question": "What is the Japanese word for 'student'?", "answer": "学生 (Gakusei)", "isKnown": false },
-      { "question": "What is the Japanese word for 'bath'?", "answer": "お風呂 (Ofuro)", "isKnown": false },
-      { "question": "What is the Japanese word for 'book'?", "answer": "本 (Hon)", "isKnown": false },
-      { "question": "What is the Japanese word for 'car'?", "answer": "車 (Kuruma)", "isKnown": false },
-      { "question": "What is the Japanese word for 'train'?", "answer": "電車 (Densha)", "isKnown": false },
-      { "question": "What is the Japanese word for 'city'?", "answer": "都市 (Toshi)", "isKnown": false },
-      { "question": "What is the Japanese word for 'mountain'?", "answer": "山 (Yama)", "isKnown": false }
+      {
+        "question": "What is the Japanese nouns for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
     ]
   },
   {
-    "name": "Japanese Grammar",
+    "name": "N3 Verbs",
     "cards": [
-      { "question": "What does the particle は (wa) indicate?", "answer": "It indicates the topic of the sentence.", "isKnown": false },
-      { "question": "What does the particle が (ga) indicate?", "answer": "It marks the subject of the sentence, often indicating emphasis or new information.", "isKnown": false },
-      { "question": "What is the function of the particle を (wo)?", "answer": "It marks the direct object of the verb.", "isKnown": false },
-      { "question": "What does the particle に (ni) indicate?", "answer": "It is used for indicating a destination, time, or indirect object.", "isKnown": false },
-      { "question": "What does the particle で (de) indicate?", "answer": "It marks the location where an action takes place.", "isKnown": false },
-      { "question": "What is the て-form used for?", "answer": "The て-form is used for connecting verbs, making requests, or forming progressive tenses.", "isKnown": false },
-      { "question": "What is the negative form of verbs in Japanese?", "answer": "The negative form is created by changing the verb ending to ない (nai) for most verbs.", "isKnown": false },
-      { "question": "How do you ask a yes/no question in Japanese?", "answer": "By adding the particle か (ka) at the end of a statement.", "isKnown": false },
-      { "question": "What is the difference between です (desu) and だ (da)?", "answer": "Both are copulas, but です (desu) is more formal, while だ (da) is informal.", "isKnown": false },
-      { "question": "What is the purpose of the particle と (to)?", "answer": "It is used to list items or quote someone, as well as to mean 'with' in some contexts.", "isKnown": false },
-      { "question": "What is the past tense of ます (masu)-form verbs?", "answer": "To make a verb past tense, change the ます (masu) ending to ました (mashita).", "isKnown": false },
-      { "question": "What is the function of the particle も (mo)?", "answer": "It means 'also' or 'too' and can replace は (wa) or が (ga) in some cases.", "isKnown": false },
-      { "question": "What does the particle よ (yo) express?", "answer": "It is used at the end of a sentence to give emphasis or indicate that the speaker is providing new information.", "isKnown": false },
-      { "question": "What is the function of the particle から (kara)?", "answer": "It is used to indicate 'because' or 'from' depending on the context.", "isKnown": false },
-      { "question": "What is the function of the particle まで (made)?", "answer": "It means 'until' or 'up to' and is used to indicate the limit or endpoint of an action or time.", "isKnown": false },
-      { "question": "What is the polite request form in Japanese?", "answer": "To make a polite request, use the て-form of a verb followed by ください (kudasai).", "isKnown": false },
-      { "question": "How do you express ability or possibility in Japanese?", "answer": "By using the ことができる (koto ga dekiru) construction or changing the verb into its potential form.", "isKnown": false },
-      { "question": "What is the usage of the particle の (no)?", "answer": "It indicates possession or is used to form noun-modifying clauses.", "isKnown": false },
-      { "question": "What is the function of the particle へ (e)?", "answer": "It indicates direction or movement towards a place, similar to 'to' in English.", "isKnown": false },
-      { "question": "What is the conditional form in Japanese?", "answer": "The conditional form is created by changing the verb into the たら (tara) or ば (ba) form, depending on the verb type.", "isKnown": false },
-      { "question": "How do you express 'want to' do something in Japanese?", "answer": "By using the verb stem followed by たい (tai), e.g., 食べたい (tabetai) means 'want to eat'.", "isKnown": false }
+      {
+        "question": "What is the Japanese verbs for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
+    ]
+  },
+  {
+    "name": "N3 Adjectives",
+    "cards": [
+      {
+        "question": "What is the Japanese adjectives for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
+    ]
+  },
+  {
+    "name": "N3 Nouns",
+    "cards": [
+      {
+        "question": "What is the Japanese nouns for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
+    ]
+  },
+  {
+    "name": "N2 Verbs",
+    "cards": [
+      {
+        "question": "What is the Japanese verbs for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
+    ]
+  },
+  {
+    "name": "N2 Adjectives",
+    "cards": [
+      {
+        "question": "What is the Japanese adjectives for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
+    ]
+  },
+  {
+    "name": "N2 Nouns",
+    "cards": [
+      {
+        "question": "What is the Japanese nouns for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
+    ]
+  },
+  {
+    "name": "N1 Verbs",
+    "cards": [
+      {
+        "question": "What is the Japanese verbs for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese verbs for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
+    ]
+  },
+  {
+    "name": "N1 Adjectives",
+    "cards": [
+      {
+        "question": "What is the Japanese adjectives for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese adjectives for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
+    ]
+  },
+  {
+    "name": "N1 Nouns",
+    "cards": [
+      {
+        "question": "What is the Japanese nouns for 'word1'?",
+        "choices": [
+          "option1_1",
+          "option1_2",
+          "option1_3",
+          "option1_4"
+        ],
+        "answer": "option1_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word2'?",
+        "choices": [
+          "option2_1",
+          "option2_2",
+          "option2_3",
+          "option2_4"
+        ],
+        "answer": "option2_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word3'?",
+        "choices": [
+          "option3_1",
+          "option3_2",
+          "option3_3",
+          "option3_4"
+        ],
+        "answer": "option3_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word4'?",
+        "choices": [
+          "option4_1",
+          "option4_2",
+          "option4_3",
+          "option4_4"
+        ],
+        "answer": "option4_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word5'?",
+        "choices": [
+          "option5_1",
+          "option5_2",
+          "option5_3",
+          "option5_4"
+        ],
+        "answer": "option5_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word6'?",
+        "choices": [
+          "option6_1",
+          "option6_2",
+          "option6_3",
+          "option6_4"
+        ],
+        "answer": "option6_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word7'?",
+        "choices": [
+          "option7_1",
+          "option7_2",
+          "option7_3",
+          "option7_4"
+        ],
+        "answer": "option7_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word8'?",
+        "choices": [
+          "option8_1",
+          "option8_2",
+          "option8_3",
+          "option8_4"
+        ],
+        "answer": "option8_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word9'?",
+        "choices": [
+          "option9_1",
+          "option9_2",
+          "option9_3",
+          "option9_4"
+        ],
+        "answer": "option9_1",
+        "isKnown": false
+      },
+      {
+        "question": "What is the Japanese nouns for 'word10'?",
+        "choices": [
+          "option10_1",
+          "option10_2",
+          "option10_3",
+          "option10_4"
+        ],
+        "answer": "option10_1",
+        "isKnown": false
+      }
     ]
   }
 ]

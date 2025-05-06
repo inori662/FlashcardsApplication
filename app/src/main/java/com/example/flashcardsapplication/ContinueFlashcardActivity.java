@@ -14,6 +14,7 @@ public class ContinueFlashcardActivity extends AppCompatActivity {
     Button continueBtn, resetBtn;
     TextView textView;
     private ArrayList<Flashcard> flashcards;
+    private String flashcards_name = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class ContinueFlashcardActivity extends AppCompatActivity {
         textView = findViewById(R.id.textViewContent);
 
         flashcards = (ArrayList<Flashcard>) getIntent().getSerializableExtra("FLASHCARDS");
+        flashcards_name = getIntent().getStringExtra("FLASHCARDS_NAME");
 
         int known = 0;
         int unknown = 0;
@@ -46,6 +48,7 @@ public class ContinueFlashcardActivity extends AppCompatActivity {
         continueBtn.setOnClickListener(v -> {
             Intent intent = new Intent(ContinueFlashcardActivity.this, FlashcardActivity.class);
             intent.putExtra("FLASHCARDS", flashcards);
+            intent.putExtra("FLASHCARDS_NAME", flashcards_name);
             startActivity(intent);
             finish();
         });
@@ -56,6 +59,7 @@ public class ContinueFlashcardActivity extends AppCompatActivity {
             }
             Intent intent = new Intent(ContinueFlashcardActivity.this, FlashcardActivity.class);
             intent.putExtra("FLASHCARDS", flashcards);
+            intent.putExtra("FLASHCARDS_NAME", flashcards_name);
             startActivity(intent);
             finish();
         });

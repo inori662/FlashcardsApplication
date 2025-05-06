@@ -28,7 +28,7 @@
             android:background="#1E88E5"
             android:gravity="center"
             android:padding="16dp"
-            android:text="🌟 Flashcards App"
+            android:text="Japanese Language Learning Application"
             android:textColor="#FFFFFF"
             android:textSize="22sp"
             android:textStyle="bold" />
